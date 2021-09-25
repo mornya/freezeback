@@ -1,0 +1,70 @@
+{
+  "name": "freezeback",
+  "version": "0.1.0",
+  "description": "The project for handling the 'Back button pressed' event.",
+  "keywords": [
+    "freezeback",
+    "vessel",
+    "back",
+    "button",
+    "key",
+    "press",
+    "event",
+    "javascript",
+    "ecmascript",
+    "typescript",
+    "front-end",
+    "back-end"
+  ],
+  "homepage": "https://github.com/mornya/freezeback",
+  "license": "MIT",
+  "author": "mornya <mornya78@gmail.com>",
+  "private": false,
+  "repository": "https://github.com/mornya/freezeback",
+  "bugs": "https://github.com/mornya/freezeback/issues",
+  "main": "./dist/index.js",
+  "types": "./dist",
+  "scripts": {
+    "prepublishOnly": "vessel prepublish",
+    "login": "vessel login",
+    "clean": "vessel clean",
+    "build": "vessel build",
+    "watch": "vessel build --watch",
+    "check": "vessel check",
+    "lint": "lintest lint",
+    "lint:fix": "lintest lint --fix",
+    "test": "lintest test",
+    "test:watch": "lintest test --watch",
+    "test:coverage": "lintest test --coverage",
+    "sonar": "sonar-scanner"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "!dist/test",
+    "!dist/**/@setup.d.ts",
+    "!dist/**/@setup.js",
+    "!dist/**/*.test.d.ts",
+    "!dist/**/*.test.js",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.1",
+    "@types/webpack-env": "^1.16.2",
+    "typescript": "^4.4.3"
+  },
+  "vessel": {
+    "minVersion": "5.0.0"
+  }
+}

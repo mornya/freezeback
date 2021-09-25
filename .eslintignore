@@ -1,0 +1,20 @@
+# Ignoring lint directories and files
+
+# directories
+/coverage
+/bin
+/dist
+/build
+/node_modules
+/out
+/public
+/static
+/src/assets
+/.coverage
+/.git
+/.idea
+/.scannerwork
+/.vscode
+
+# configuration files
+/*.js
