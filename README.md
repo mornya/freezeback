@@ -4,6 +4,9 @@
 ![types](https://img.shields.io/npm/types/freezeback)
 ![downloads](https://img.shields.io/npm/dw/freezeback)
 ![license](https://img.shields.io/npm/l/freezeback)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=mornya_freezeback&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=mornya_freezeback)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=mornya_freezeback&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=mornya_freezeback)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=mornya_freezeback&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=mornya_freezeback)
 
 The project for handling the 'Back button pressed' event.
 
@@ -153,3 +156,5 @@ $ npm run sonar
 
 ## License
 프로젝트 라이센스는 [LICENSE](LICENSE) 파일 참조.
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/summary/new_code?id=mornya_freezeback)
