@@ -5,6 +5,7 @@
     "target": "es5",
     "typeRoots": [
       "./node_modules/@types",
+      "./public/types",
       "./types"
     ],
     "types": [
@@ -23,6 +24,7 @@
     "baseUrl": ".",
     "outDir": "./dist/",
     "jsx": "preserve",
+    "importsNotUsedAsValues": "preserve",
     "declaration": true,
     "esModuleInterop": true,
     "downlevelIteration": true,
@@ -41,14 +43,13 @@
     "suppressImplicitAnyIndexErrors": true
   },
   "include": [
+    "public/types/**/*",
     "types/**/*",
     "src/**/*"
   ],
   "exclude": [
     "coverage",
     "dist",
-    "node_modules",
-    "public",
     "src/assets",
     ".idea",
     ".git",
