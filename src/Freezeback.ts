@@ -110,11 +110,8 @@ export function unfreeze (key: string): void {
  * @returns {boolean}
  */
 export function isFrozen (key?: string): boolean {
-  return isInitialized
-    ? (
-      key
-        ? dataStack.length > 0 && dataStack.some(data => data.key === key)
-        : dataStack.length > 0
-    )
-    : false;
+  const has = key
+    ? dataStack.length > 0 && dataStack.some(data => data.key === key)
+    : dataStack.length > 0;
+  return isInitialized ? has : false;
 }
