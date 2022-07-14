@@ -94,7 +94,7 @@ export function unfreeze(key: string): void {
   if (isInitialized) {
     // 해당 key로 등록된 콜백 강제 제거시 사용
     if (isFrozen()) {
-      dataStack = dataStack.filter((data) => data.key !== key);
+      dataStack = dataStack.filter((item) => item.key !== key);
     }
     // pushState 제거
     const data = window.history.state as Data;
