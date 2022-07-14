@@ -36,7 +36,7 @@ export function initialize(option?: Option): void {
  */
 export function destroy(needsUnfreeze: boolean | undefined = true): void {
   if (isInitialized) {
-    if (needsUnfreeze) {
+    if (needsUnfreeze && dataStack.length > 0) {
       window.history.go(-dataStack.length);
     }
 
