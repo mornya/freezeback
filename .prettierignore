@@ -1,5 +1,4 @@
-# Ignoring git directories and files
-# For more informations: https://help.github.com/articles/ignoring-files
+# Ignoring prettier directories and files
 
 # local-only directories
 /coverage
@@ -8,18 +7,27 @@
 /build
 /node_modules
 /out
-/tmp
 /temp
 /temporary
-/*.tgz
+/tmp
+/public
+/server
+/.next
+/.pnp
 /.coverage
 /.scannerwork
+/.env
+/.env.*
 .DS_Store
 .eslintcache
+.pnp.js
+.vercel
+.swc
 
 # Logs
 /logs
 *.log
+*.tsbuildinfo
 stats.json
 npm-debug.log*
 yarn-debug.log*
@@ -47,3 +55,8 @@ report.*.json
 .eslintrc
 eslint.config.json
 jest.config.json
+
+# Source codes that shouldn't be applied
+*.scss
+*.css
+*.d.ts
