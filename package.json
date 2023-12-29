@@ -1,6 +1,6 @@
 {
   "name": "freezeback",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The project for handling the 'Back button pressed' event.",
   "keywords": [
     "freezeback",
