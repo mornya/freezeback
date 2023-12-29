@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "CommonJS",
     "moduleResolution": "node",
-    "target": "es5",
+    "target": "ES5",
     "typeRoots": [
       "./node_modules/@types",
       "./public/types",
@@ -20,11 +20,9 @@
       "dom.iterable",
       "scripthost"
     ],
-    "charset": "utf8",
     "baseUrl": ".",
     "outDir": "./dist/",
     "jsx": "preserve",
-    "importsNotUsedAsValues": "preserve",
     "declaration": true,
     "esModuleInterop": true,
     "downlevelIteration": true,
@@ -33,14 +31,14 @@
     "allowJs": true,
     "checkJs": false,
     "strict": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "experimentalDecorators": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "forceConsistentCasingInFileNames": true,
-    "suppressImplicitAnyIndexErrors": true
+    "verbatimModuleSyntax": false
   },
   "include": [
     "public/types/**/*",
