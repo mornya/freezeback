@@ -33,15 +33,15 @@ Freezeback 모듈은 다음과 같은 메소드들을 제공한다.
 
 #### `Freezeback.initialize`
 이벤트 초기화를 실행한다. 애플리케이션 로딩 초기에 한 번 만 실행한다.
-```typescript
-Freezeback.initialize();
+```typescript jsx
+function initialize(option?: Option): void {}
 ```
 
 #### `Freezeback.destroy`
 이벤트 해제를 실행한다. 애플리케이션 종료시 실행한다.
 `needsUnfreeze` 값은 "뒤로가기"를 모두 시도 후 종료한다 (default: true)
-```typescript
-Freezeback.destroy(needsUnfreeze?: boolean);
+```typescript jsx
+function destroy(needsUnfreeze: boolean | undefined = true): void {}
 ```
 
 #### `Freezeback.freeze`
@@ -49,21 +49,21 @@ Freezeback.destroy(needsUnfreeze?: boolean);
 `key`는 중첩된 잠금 사용시 각각을 구분하기 위한 값으로, 어떤 문자열이 와도 상관없다.
 뒤로가기가 눌려지거나 `window.history.back()` 등이 호출되면
 파라미터로 주어진 `onBack` 콜백 함수가 실행되며, 뒤로가기 잠금이 해제된다.
-```typescript
-Freezeback.freeze(key: string, onBack?: OnBackCallback);
+```typescript jsx
+function freeze(key: string, onBack?: OnBackCallback): void {}
 ```
 
 #### `Freezeback.unfreeze`
 "뒤로가기"를 잠궜을 때 강제로 잠금해제 시킨다.
-```typescript
-Freezeback.unfreeze(key: string);
+```typescript jsx
+function unfreeze(key: string): void {}
 ```
 
 #### `Freezeback.isFrozen`
 "뒤로가기"가 잠겨있는지 여부를 확인한다.
 `key`
-```typescript
-Freezeback.unfreeze(key?: string);
+```typescript jsx
+function isFrozen(key?: string): boolean {}
 ```
 
 ## Installation for development

@@ -18,6 +18,8 @@ let isInitialized: boolean = false;
 
 /**
  * initialize
+ *
+ * @param option {Option | undefined}
  */
 export function initialize(option?: Option): void {
   if (!isInitialized && typeof window !== 'undefined') {
@@ -32,7 +34,7 @@ export function initialize(option?: Option): void {
 /**
  * destroy
  *
- * @param needsUnfreeze {boolean?}
+ * @param needsUnfreeze {boolean | undefined}
  */
 export function destroy(needsUnfreeze: boolean | undefined = true): void {
   if (isInitialized) {
@@ -74,7 +76,7 @@ function popStateHandler(event: PopStateEvent): void {
  * freeze
  *
  * @param key {string}
- * @param onBack {OnBackCallback?}
+ * @param onBack {OnBackCallback | undefined}
  */
 export function freeze(key: string, onBack?: OnBackCallback): void {
   if (isInitialized) {
@@ -107,7 +109,7 @@ export function unfreeze(key: string): void {
 /**
  * isFrozen
  *
- * @param key {string?}
+ * @param key {string | undefined}
  * @returns {boolean}
  */
 export function isFrozen(key?: string): boolean {
